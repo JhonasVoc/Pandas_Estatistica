@@ -17,3 +17,6 @@ dataset.Idade.mean()
 #Agrupado por Sexo
 dataset.groupby(['Sexo'])['Idade'].mean()
 
+#Usando loc para média de idade dos homens
+dataset.groupby('Sexo').mean().loc['H']
+
